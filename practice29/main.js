@@ -15,3 +15,5 @@ function do_math (num1, num2, operator) {
         console.log("Did you enter 2 numbers and an operator?")
     }
 }
+
+//could also do a switch
