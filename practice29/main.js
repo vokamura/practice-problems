@@ -18,3 +18,4 @@ function do_math (num1, num2, operator) {
 
 //could also do a switch
 //find a way to see if parameters are out of order
+
