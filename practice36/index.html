@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find the Vowels-Practice 36</title>
+    <script>
+        var str1="hello how are you my name is vikki";
+        var strVowels="";
+        var vowels = "aeiou";
+        function vowelCheck(str1) {
+            //.match checks matches in [] which finds any character matches in []
+            //g is to search globally in string, and i is case insensitive
+            // //is a regex pattern
+            // regular expressions are patters used to match character combinations ins strings
+            var matches = str1.match(/[aeiou]/gi);
+            return matches;
+         }   
+         vowelCheck(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
