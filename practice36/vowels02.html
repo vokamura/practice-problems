@@ -1,0 +1,42 @@
+<!-- ## Find the vowels
+
+- given a string, find all the vowels in the string.  Store them in a new string
+- example:
+	- parameters: "four score and seven years ago"
+	- return: "ouoeaeeeaao"
+
+### human-level instructions
+- create variable to store vowels
+- begin loop
+	- get each letter, one at a time
+	- compare it with each each vowel and see if it matches
+		- if it is, add it to the vowel variable
+- repeat -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function vowelCheck(str){
+            var vowels = 'aeiou';
+            var newString = '';
+            for (var i = 0; i < str.length; i++){
+                for (var k = 0; k < vowels.length; k++){
+                    if(str[i] === vowels[k]) {
+                        newString += str[i];
+                    }
+                }
+            }
+            return newString;
+        }
+        vowelCheck("four score and seven years ago");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
