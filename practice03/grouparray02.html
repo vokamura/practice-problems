@@ -1,0 +1,43 @@
+Build a function that sorts an array into a multidimensional array grouped by data type
+
+- Write a function that takes one parameter 
+	- Parameter 1 - An array of anything
+- The function should output a multidimensional array grouped by data type
+- Example: 
+	- `var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];`
+	- `groupArray(myArray);`
+    - Output - `[['hello, 'goodbye', '25'], [34, 56, 12], [true, false, true]]`
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script>
+            
+            var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+            function groupArray(myArray){
+                var aArray = [];
+                var bArray = [];
+                var cArray = [];
+                var newArray = [aArray, bArray, cArray];
+                for (var i=0; i<myArray.length;i++){
+                    if(typeof myArray[i] === "string") {
+                        aArray.push(myArray[i])
+                    } else if (typeof myArray[i] === "number") {
+                        bArray.push(myArray[i]);
+                    } else if (typeof myArray[i] === "boolean") {
+                        cArray.push(myArray[i]);
+                    }
+                }
+                return newArray;
+            }
+            groupArray(myArray);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+    </html>
