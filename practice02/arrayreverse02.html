@@ -1,0 +1,39 @@
+## Total Reverse 
+
+Build a function that takes in an array and reverses it
+
+- Write a function that takes one parameter
+	- Parameter 1 - An array of anything
+- The function should output an array that is in reverse order from the input array
+- Example: 
+	- `var myArray = ['hello', 45, 'Bob', 'what', '23'];`
+	- `arrayReverse(myArray);`
+	- Output - `['23', 'what', 'Bob', 45, 'hello']`
+- Avoid using pre-built functions that do something similar
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+        var myArray = ['hello', 45, 'Bob', 'what', '23'];
+        function arrayReverse(myArray){
+            var newArray=[];
+            var current = "";
+            for (var i = myArray.length-1; i >=0; i--){
+                current = myArray.pop();
+                newArray.push(current);
+            }
+            return newArray;
+        }
+        arrayReverse(myArray)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invert Positive Number</title>
+    <script>
+        //Build a function, invert_negatives, that takes a number as a parameter, and 
+        //if the number is positive, it makes it negative. 
+        //If it isn't a number, it returns false
+        function invert_negatives(num1) {
+            if (num1 >= 0) {
+              return -Math.abs(num1);  
+            } else if (num1 < 0) {
+                return Math.abs(num1);
+            } else if (typeof num1 !== "number"){
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

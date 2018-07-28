@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Randomize Array</title>
+    <script>
+        //not done
+        var input_array = [5,3,2,5,1]
+        function randomizelist(input_array) {
+           for (var i=0; i< input_array.length; i++) {
+               var randomNum = Math.floor(Math.random())*input_array;
+               input_array.pop(randomNum);
+               input_array.unshift(randomNum);
+               return input_array;
+           } 
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

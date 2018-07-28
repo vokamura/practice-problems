@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASCII Code</title>
+    <script>
+        var str = "the cat in the hat";
+        function strToChar(str) {
+            var newStr = "";
+            for (var i=0; i<str.length; i++) {
+            newStr += str.charCodeAt(i);
+            }
+            return newStr;
+        }
+        strToChar(str);
+
+        //Optimization: How would you speed up the processing if you already encountered a value?
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
