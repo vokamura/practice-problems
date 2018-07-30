@@ -21,8 +21,12 @@ function evenodd(array){
     var even = [];
     var output = {odd, even};
     for(var i=0; i<array.length;i++){
-        if(array[i] % 2 === 0 && even[k] !== array[i]){
-            even.push(array[i]);
+        if(array[i] % 2 === 0){
+            for (var k=0; k<even.length;k++){
+                if (even[k]!== array[i]){
+                    even.push(array[i]);
+                }
+            }
         } else if (array[i] %2 === 1){
             odd.push(array[i]);
         } 
