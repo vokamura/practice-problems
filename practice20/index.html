@@ -11,10 +11,10 @@
         function randomizelist(input_array) {
            for (var i=0; i< input_array.length; i++) {
                var randomNum = Math.floor(Math.random())*input_array;
-               input_array.pop(randomNum);
-               input_array.unshift(randomNum);
-               return input_array;
+               var popRandom = input_array.pop(randomNum);
+               input_array.unshift(popRandom);
            } 
+           return input_array;
         }
     </script>
 </head>
